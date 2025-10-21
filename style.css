@@ -128,3 +128,12 @@ body {
   list-style-type: disc;
   padding-left: 20px;
 }
+
+/* Styling untuk pesan sapa yang muncul */
+#pesanSapa {
+  font-size: 1.1em;        /* Ukuran font agak besar */
+  color: #007BFF;         /* Warnanya biru (sesuai tombol) */
+  font-weight: bold;       /* Tulisannya tebal */
+  margin-top: 20px;        /* Kasih jarak sedikit dari tombol */
+  height: 20px;            /* Beri tinggi agar tidak lompat-lompat */
+}
