@@ -19,7 +19,31 @@
       <img src="foto-profil.jpg" alt="foto profil Rois Zul Umam">
       <h1>Rois Zul Umam</h1>
       <p>Siswa skama unik, yang tertarik pada teknologi.</p>
+      <div class="links">
+        <a href="https://www.tiktok.com/@rois0000027?is_from_webapp=1&sender_device=pc" target="_blank">Kunjungi TikTok Saya</a>
+        <button id="sapaButton">Sapa Saya!</button>
+      </div>
+
+      <p id="pesanSapa"></p>
       
+    </div> </div> ```
+
+**B. Tulis Kode di `script.js`**
+
+Isi file `script.js` kamu dengan kode ini:
+```javascript
+// 1. Kita "tangkap" kedua elemen: tombolnya DAN wadah pesannya
+const tombolSapa = document.getElementById("sapaButton");
+const tempatPesan = document.getElementById("pesanSapa");
+
+// 2. Kita pasang pendengar di tombolnya
+tombolSapa.addEventListener("click", function() {
+  
+  // 3. KETIKA diklik, kita ubah isi teks dari 'tempatPesan'
+  tempatPesan.textContent = "Halo, bang! Terima kasih sudah mampir. Semangat ngodingnya!";
+  
+});
+  
       <div class="links">
         <a href="https://www.tiktok.com/@rois0000027?is_from_webapp=1&sender_device=pc" target="_blank">Kunjungi TikTok Saya</a>
         <button id="sapaButton">Sapa Saya!</button>
