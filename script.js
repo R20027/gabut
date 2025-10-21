@@ -11,19 +11,3 @@ tombolSapa.addEventListener("click", function() {
   alert("Halo, Rois! Semangat terus belajar codingnya, bang!");
   
 });
-
-**B. Tulis Kode di `script.js`**
-
-Isi file `script.js` kamu dengan kode ini:
-```javascript
-// 1. Kita "tangkap" kedua elemen: tombolnya DAN wadah pesannya
-const tombolSapa = document.getElementById("sapaButton");
-const tempatPesan = document.getElementById("pesanSapa");
-
-// 2. Kita pasang pendengar di tombolnya
-tombolSapa.addEventListener("click", function() {
-  
-  // 3. KETIKA diklik, kita ubah isi teks dari 'tempatPesan'
-  tempatPesan.textContent = "Halo, bang! Terima kasih sudah mampir. Semangat ngodingnya!";
-  
-});
