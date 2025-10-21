@@ -1,5 +1,130 @@
+/* Pengaturan dasar untuk seluruh halaman */
 body {
-  background-color: #ffffe0;
   font-family: Arial, sans-serif;
-  color: #191970;
+  background-color: #f0f2f5; /* Warna latar belakang abu-abu muda */
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling untuk Menu Navigasi */
+.menu-navigasi {
+  background-color: #333; /* Warna background menu */
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-navigasi a {
+  display: inline-block;
+  color: white; /* Warna teks link */
+  padding: 14px 20px;
+  text-decoration: none; /* Hilangkan garis bawah link */
+  font-size: 17px;
+  transition: background-color 0.3s; /* Efek hover mulus */
+}
+
+/* Efek saat mouse diarahkan ke link menu */
+.menu-navigasi a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Penanda halaman yang sedang aktif */
+.menu-navigasi a.aktif {
+  background-color: #007BFF; /* Warna biru untuk halaman aktif */
+  color: white;
+}
+
+/* Pembungkus konten agar rapi di tengah */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto; /* Memberi jarak atas/bawah 30px, dan auto kiri/kanan (jadi ke tengah) */
+}
+
+/* Styling untuk Kartu Profil di 'index.html' */
+.kartu-profil {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: center;
+}
+
+.kartu-profil img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Membuat foto profil bulat */
+  object-fit: cover; /* Agar foto tidak gepeng */
+  border: 4px solid #f0f2f5;
+  margin-bottom: 15px;
+}
+
+.kartu-profil h1 {
+  margin: 10px 0;
+  font-size: 2em;
+}
+
+.kartu-profil p {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.kartu-profil .links {
+  margin-top: 25px;
+}
+
+.kartu-profil .links a,
+.kartu-profil .links button {
+  text-decoration: none;
+  color: white;
+  background-color: #007BFF;
+  padding: 12px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.kartu-profil .links button {
+  background-color: #28a745; /* Warna hijau untuk tombol sapa */
+}
+
+.kartu-profil .links a:hover,
+.kartu-profil .links button:hover {
+  opacity: 0.8; /* Efek sedikit transparan saat di-hover */
+}
+
+/* Styling untuk Halaman Konten di 'tentang.html' dan 'kontak.html' */
+.halaman-konten {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: left; /* Teks rata kiri agar mudah dibaca */
+  line-height: 1.7; /* Jarak antar baris */
+}
+
+.halaman-konten h1 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Styling untuk foto di halaman 'tentang.html' */
+.foto-halaman {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin: 20px 0;
+  display: block;
+}
+
+.halaman-konten ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
