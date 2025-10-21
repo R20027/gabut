@@ -8,6 +8,6 @@ const tombolSapa = document.getElementById("sapaButton");
 tombolSapa.addEventListener("click", function() {
   
   // 3. Ini yang terjadi KETIKA tombol di-klik
-  alert("Halo, Rois! Semangat terus belajar codingnya, bang!");
+  alert("Halo, saya Rois! Semangat terus belajar codingnyaaa!!!");
   
 });
